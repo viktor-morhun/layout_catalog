@@ -8,12 +8,13 @@
   width: $productWidth;
   height: $productHeight;
   box-sizing: border-box;
-  border: 1px solid #f3f3f3;
+  border: 1px solid $prodBorderColor;
   border-radius: 5px;
   padding: 15px 14px;
   background-color: $main-color;
   font-size: 11px;
   line-height: 13px;
+  transition: box-shadow $animDuration;
 
   &:hover {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.07);
@@ -35,6 +36,13 @@
     width: 160px;
     height: 134px;
     margin: 15px 20px 32px;
+    transition: transform $imgAnimDuration;
+
+    &:hover {
+      transform: scale(1.2);
+      border: $prodImgHovBorder solid $prodBorderColor;
+      margin-bottom: 32px - 2 * $prodImgHovBorder;
+    }
   }
 
   &__rate {
@@ -80,6 +88,7 @@
     line-height: 16px;
     font-weight: 700;
     text-transform: uppercase;
+    transition: background-color, color $animDuration;
 
     &:hover {
       color: $main-color-2;
