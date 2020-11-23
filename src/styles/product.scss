@@ -33,15 +33,17 @@
   }
 
   &__img {
+    box-sizing: content-box;
     width: 160px;
     height: 134px;
-    margin: 15px 20px 32px;
+    margin: 0 20px 17px;
+    padding: 12px 0;
     transition: transform $imgAnimDuration;
+    border: $prodImgHovBorder solid transparent;
 
     &:hover {
       transform: scale(1.2);
       border: $prodImgHovBorder solid $prodBorderColor;
-      margin-bottom: 32px - 2 * $prodImgHovBorder;
     }
   }
 
