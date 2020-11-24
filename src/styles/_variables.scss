@@ -7,6 +7,7 @@ $productWidth: 200px;
 $productHeight: 403px;
 $prodImgHovBorder: 3px;
 $productGap: 48px;
+$productRowsGap: 50px;
 $productsInARow: 4;
 $catalogPaddingX: 40px;
 $star-size: 15px;
@@ -15,5 +16,5 @@ $imgAnimDuration: 1s;
 
 @function catalogWidth($productsInARow) {
   @return $productWidth * $productsInARow
-    + $productGap * ($productsInARow - 1) + 2 * $catalogPaddingX;
+    + $productGap * ($productsInARow - 1);
 }
