@@ -2,10 +2,12 @@
   text-align: right;
 
   &__list {
-    margin: 0 calc(50px - #{$nav-spacing/2}) 0 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(8, auto);
+    gap: 0 $nav-spacing;
     list-style: none;
     flex-shrink: 0;
-    display: flex;
     padding: 0;
   }
 
@@ -15,7 +17,6 @@
 
   &__link {
     display: inline-block;
-    margin: 0 $nav-spacing/2;
     color: #000;
     text-decoration: none;
     padding: $header-height/3 0;
@@ -35,7 +36,7 @@
       content: "";
       position: absolute;
       height: 4px;
-      width: calc(100% - #{$nav-spacing});
+      width: 100%;
       border-radius: 4px;
       bottom: 0;
     }
