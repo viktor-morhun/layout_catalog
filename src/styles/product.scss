@@ -1,7 +1,6 @@
 @import "reset";
 
 .product {
-  margin: 0 24px;
   display: flex;
   align-items: center;
   flex-flow: column;
@@ -97,8 +96,4 @@
       background-color: $main-color;
     }
   }
-}
-
-.catalog__product {
-  margin-bottom: 50px;
 }
