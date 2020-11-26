@@ -1,15 +1,21 @@
 $main-color: #fff;
 $main-color-2:  #00acdc;
+$prodBorderColor: #f3f3f3;
 $header-height: 60px;
 $nav-spacing: 20px;
+$headerSidePadding: 50px;
 $productWidth: 200px;
 $productHeight: 403px;
+$prodImgHovBorder: 3px;
 $productGap: 48px;
+$productRowsGap: 50px;
 $productsInARow: 4;
 $catalogPaddingX: 40px;
 $star-size: 15px;
+$animDuration: 0.4s;
+$imgAnimDuration: 1s;
 
 @function catalogWidth($productsInARow) {
   @return $productWidth * $productsInARow
-    + $productGap * ($productsInARow - 1) + 2 * $catalogPaddingX;
+    + $productGap * ($productsInARow - 1);
 }
