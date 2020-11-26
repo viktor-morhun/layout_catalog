@@ -3,6 +3,7 @@
   padding-right: $headerSidePadding;
 
   &__list {
+    padding: 0;
     margin: 0;
     display: grid;
     grid-template-columns: repeat(8, auto);
